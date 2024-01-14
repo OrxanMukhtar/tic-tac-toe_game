@@ -10,18 +10,18 @@
 }
 
 .gameArea {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
 }
 
 .gameArea div {
-    width: 65.1px;
-    height: 65.2px;
+    width: 55.2px;
+    height: 55.2px;
     color: #fff;
     background-color: rgb(255, 77, 0);
     border: 3px solid rgb(255, 255, 255);
