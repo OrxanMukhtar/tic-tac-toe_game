@@ -34,6 +34,14 @@ function checkWinner() {
     let x8 = document.getElementById("x8").innerHTML;
     let x9 = document.getElementById("x9").innerHTML;
 
+    if(x1 === x2 && x2 === x3 && x1 === currentPlayer) {
+        showWinnerImage();
+        document.getElementById("h2").innerHTML = `Son qazanan: ${currentPlayer}`
+        x1.style.color = "red"
+        x2.style.color = "red"
+        x3.style.color = "red"
+    }
+
     if ((x1 === x2 && x2 === x3 && x1 === currentPlayer) ||
         (x1 === x5 && x5 === x9 && x1 === currentPlayer) ||
         (x1 === x4 && x4 === x7 && x1 === currentPlayer) ||
@@ -44,6 +52,6 @@ function checkWinner() {
         (x3 === x6 && x6 === x9 && x3 === currentPlayer)
     ) {
         showWinnerImage();
-        document.getElementById("h2").innerHTML = `Qazanan: ${currentPlayer}`
+        document.getElementById("h2").innerHTML = `Son qazanan: ${currentPlayer}`
     }
 }
