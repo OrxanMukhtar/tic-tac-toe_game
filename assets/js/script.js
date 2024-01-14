@@ -44,5 +44,6 @@ function checkWinner() {
         (x3 === x6 && x6 === x9 && x3 === currentPlayer)
     ) {
         showWinnerImage();
+        document.getElementById("h2").innerHTML = `Qazanan: ${currentPlayer}`
     }
 }
